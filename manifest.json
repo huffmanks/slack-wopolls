@@ -1,0 +1,47 @@
+{
+  "_metadata": {
+    "major_version": 1,
+    "minor_version": 1
+  },
+  "display_information": {
+    "name": "wopolls"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "wopolls",
+      "always_online": true
+    },
+    "slash_commands": [
+      {
+        "command": "/poll",
+        "description": "Create and manage polls and surveys",
+        "should_escape": false
+      }
+    ]
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": [
+        "commands",
+        "chat:write",
+        "users:read",
+        "users:read.email",
+        "channels:read",
+        "groups:read",
+        "mpim:read",
+        "im:read",
+        "channels:join",
+        "reactions:write",
+        "files:write"
+      ]
+    }
+  },
+  "settings": {
+    "interactivity": {
+      "is_enabled": true
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": true,
+    "token_rotation_enabled": false
+  }
+}

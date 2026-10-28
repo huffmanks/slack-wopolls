@@ -1,0 +1,26 @@
+{
+  "name": "wopolls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --env-file=.env --watch app.ts",
+    "build": "tsc",
+    "check": "tsc --noEmit app.ts",
+    "validate": "pnpx slack manifest validate",
+    "push": "pnpx slack manifest push"
+  },
+  "dependencies": {
+    "@slack/bolt": "^5.1.0",
+    "dotenv": "^18.0.9",
+    "json2csv": "6.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "@slack/cli-hooks": "^2.0.0",
+    "@types/json2csv": "^5.0.7",
+    "@types/node": "^24.19.2",
+    "typescript": "^6.0.3"
+  }
+}
